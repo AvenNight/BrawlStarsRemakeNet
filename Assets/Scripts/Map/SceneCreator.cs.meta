@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: e9bef2c93690ecf42bfe1e5050ef8b3e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wall: {fileID: 2802290223904171833, guid: 0b67877786e6adc46b08bfc5ad6098c8, type: 3}
+  - grass: {fileID: 9042085984248492143, guid: ec5351da97b045544a9f8e259d8bad65, type: 3}
+  - ground: {fileID: 8769623100856474243, guid: 95a0fd7de52f449469d6faa142f13c8d,
+      type: 3}
+  - water: {fileID: 8647758114695534146, guid: 78f4730c4589b3848b3dd88cab99b28f, type: 3}
+  - player: {fileID: 3962016783313354640, guid: 3cb05423710e0b84ca35ab425c052e38,
+      type: 3}
+  - enemy: {fileID: 2678201178636207492, guid: f04db31442cb7a94daf6602a47ea0836, type: 3}
+  - exit: {fileID: 8337060240571258595, guid: 48282449fcd128644a7cc6733dea16d2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
