@@ -244,4 +244,4 @@ MonoBehaviour:
   moveThreshold: 1
   Pressed: 0
   Holded: 0
-  holdTimeSec: 0.25
+  holdTimeSec: 0.05
