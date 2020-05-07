@@ -23,6 +23,7 @@ public class Spawner : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Player") == null)
         {
             curPlayer = Instantiate(playerPrefab, playerPosition, Quaternion.identity);
+            curPlayer.transform.SetParent(GameObject.FindGameObjectWithTag("MapObjects").transform, true);
             curPlayer.DeathNotify += Respawn;
         }
     }

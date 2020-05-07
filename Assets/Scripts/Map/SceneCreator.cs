@@ -65,15 +65,10 @@ public class SceneCreator : MonoBehaviourPunCallbacks
     private void CreateObject(MapObjectData mapObj)
     {
         if (mapObj == null || CheckPlayer(mapObj)) return;
-        GameObject curObj;
-
-        if (mapObj.Prefab == player)
-            curObj = PhotonNetwork.Instantiate(mapObj.Prefab.name, mapObj.Location, Quaternion.identity);
-        else
-        {
-            curObj = Instantiate(mapObj.Prefab, mapObj.Location, Quaternion.identity);
-            curObj.transform.SetParent(mapObj.Parrent.transform, true);
-        }
+        var curObj = mapObj.Prefab == player ? // тут переделать под сеть (сетевой/отслеживаемый объект или нет?)
+            PhotonNetwork.Instantiate(mapObj.Prefab.name, mapObj.Location, Quaternion.identity) :
+            Instantiate(mapObj.Prefab, mapObj.Location, Quaternion.identity);
+        curObj.transform.SetParent(mapObj.Parrent.transform, true);
     }
 
     private bool CheckPlayer(MapObjectData mapObj) // костыль на скорую руку для кнопки Restart, которой в игре не будет
